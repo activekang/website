@@ -1,0 +1,259 @@
+@charset "utf-8";
+html { overflow-y:auto}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family:'notokr-regular';
+	font-size:16px;
+	color:#666666;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/*
+게시판 뷰페이지 안에 관리자단에서 넣는 테이블에 영향을 미치므로 전역 css로 사용하지 않고 각각 table에 스타일 적용.
+table { border-collapse:collapse; border-spacing:0; }
+*/
+table caption, legend { position: relative; overflow: hidden; width: 0px; height: 0px; font-size: 0; line-height: 0; }
+em, address { font-style:normal; }
+img,
+a img { border:none; }
+
+body a { text-decoration:none;}
+body a:hover,
+body a:focus{text-decoration:none;}
+body .nav>li>a:hover,
+body .nav>li>a:focus{background-color:initial}
+fieldset{border:0 none;}
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	list-style:none
+	}
+body.admin nav ul li{background:none;}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+@font-face{ font-family:'notokr-light';
+	src:url('../font/NotoKR-Light/notokr-light.eot');
+	src:url('../font/NotoKR-Light/notokr-light.eot?#iefix') format('embedded-opentype'),
+	url('../font/NotoKR-Light/notokr-light.woff') format('woff'),
+	url('../font/NotoKR-Light/notokr-light.ttf') format('truetype'),
+	url('../font/NotoKR-Light/notokr-light.svg') format('svg');
+}
+@font-face{ font-family:'notokr-regular';
+	src:url('../font/NotoKR-Regular/notokr-regular.eot');
+	src:url('../font/NotoKR-Regular/notokr-regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/NotoKR-Regular/notokr-regular.woff') format('woff'),
+	url('../font/NotoKR-Regular/notokr-regular.ttf') format('truetype'),
+	url('../font/NotoKR-Regular/notokr-regular.svg') format('svg');
+}
+@font-face{ font-family:'notokr-bold';
+	src:url('../font/NotoKR-Bold/notokr-bold.eot');
+	src:url('../font/NotoKR-Bold/notokr-bold.eot?#iefix') format('embedded-opentype'),
+	url('../font/NotoKR-Bold/notokr-bold.woff') format('woff'),
+	url('../font/NotoKR-Bold/notokr-bold.ttf') format('truetype'),
+	url('../font/NotoKR-Bold/notokr-bold.svg') format('svg');
+}
+@font-face{ font-family:'notokr-medium';
+	src:url('../font/NotoKR-Medium/notokr-medium.eot');
+	src:url('../font/NotoKR-Medium/notokr-medium.eot?#iefix') format('embedded-opentype'),
+	url('../font/NotoKR-Medium/notokr-medium.woff') format('woff'),
+	url('../font/NotoKR-Medium/notokr-medium.ttf') format('truetype'),
+	url('../font/NotoKR-Medium/notokr-medium.svg') format('svg');
+}
+@font-face{ font-family:'notokr-DemiLight';
+	 src: url(../font/NotoKR-DemiLight/NotoSansKR-DemiLight.eot);
+ 	 src: url(../font/NotoKR-DemiLight/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'),
+       url(../font/NotoKR-DemiLight/NotoSansKR-DemiLight.woff2) format('woff2'),
+       url(../font/NotoKR-DemiLight/NotoSansKR-DemiLight.woff) format('woff'),
+       url('../font/NotoKR-DemiLight/NotoSansKR-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 400;
+ src: url(../font/NanumSquare/NanumSquareR.eot);
+ src: url(../font/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareR.woff) format('woff'),
+      url(../font/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 700;
+ src: url(../font/NanumSquare/NanumSquareB.eot);
+ src: url(../font/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareB.woff) format('woff'),
+      url(../font/NanumSquare/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 800;
+ src: url(../font/NanumSquare/NanumSquareEB.eot);
+ src: url(../font/NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareEB.woff) format('woff'),
+      url(../font/NanumSquare/NanumSquareEB.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'NanumSquare';
+ font-weight: 300;
+ src: url(../font/NanumSquare/NanumSquareL.eot);
+ src: url(../font/NanumSquare/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(../font/NanumSquare/NanumSquareL.woff) format('woff'),
+      url(../font/NanumSquare/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:'NanumMyeongjo';
+  font-style:normal;
+  font-weight:400;
+  src:url("../font/NanumMyeongjo/NanumMyeongjo.eot");
+  src:url("../font/NanumMyeongjo/NanumMyeongjo.eot?#iefix") format('embedded-opentype'),
+       url("../font/NanumMyeongjo/NanumMyeongjo.woff") format('woff'),
+       url("../font/NanumMyeongjo/NanumMyeongjo.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:'NanumMyeongjo';
+  font-style:normal;
+  font-weight:600;
+  src:url("../font/NanumMyeongjo/NanumMyeongjoBold.eot");
+  src:url("../font/NanumMyeongjo/NanumMyeongjoBold.eot?#iefix") format('embedded-opentype'),
+       url("../font/NanumMyeongjo/NanumMyeongjoBold.woff") format('woff'),
+       url("../font/NanumMyeongjo/NanumMyeongjoBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family:'NanumMyeongjo';
+  font-style:normal;
+  font-weight:800;
+  src:url("../font/NanumMyeongjo/NanumMyeongjoExtraBold.eot");
+  src:url("../font/NanumMyeongjo/NanumMyeongjoExtraBold.eot?#iefix") format('embedded-opentype'),
+       url("../font/NanumMyeongjo/NanumMyeongjoExtraBold.woff") format('woff'),
+       url("../font/NanumMyeongjo/NanumMyeongjoExtraBold.ttf") format('truetype');
+}
+
+
+
+div h1, div h2, div h3, div h4, div h5, div h6{margin:0; line-height:normal;}
+div ul, div ol{margin:0; padding:0;}
+div p{margin:0;}
+div address{margin:0}
+
+body li{line-height:normal;}
+
+input::-ms-clear,
+input::-ms-reveal {display: none; width : 0; height: 0;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+input{-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+input, select{-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
+input[type=text], select, textarea{-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; outline:none; 
+font-family: 'notokr-regular'; font-size:16px;/*-webkit-appearance: none;-moz-appearance: none;appearance: none;*/}
+input[type=text]:focus, select:focus, textarea:focus{outline: 2px solid #000;}
+
+@media only print and (orientation: landscape) {
+
+	body{-webkit-print-color-adjust: exact;color:#000;}
+	@page a4sheet { size:21.0cm 29.7cm }/* size:21.0cm 29.7cm */
+	.a4 {width:100%; height:100%; font-size:1em; page:a4sheet; page-break-after: always; border-style:none; }
+	.header-warp{display:block;}
+	.m-header-warp{display:none;}
+	.m-footer{display:none;}
+	.footer{display:block;}
+	.main-visual-area{display:block;}
+	.m-main-visual-area{display:none;}
+}
+
+/* Portrait mode */
+
+@media only print and (orientation: portrait) {
+
+	body{-webkit-print-color-adjust: exact;color:#000;}
+	@page a4sheet { size:21.0cm 29.7cm }/* size:21.0cm 29.7cm */
+	.a4 {width:100%; height:100%; font-size:1em; page:a4sheet; page-break-after: always; border-style:none; }
+	.header-warp{display:block;}
+	.m-header-warp{display:none;}
+	.m-footer{display:none;}
+	.footer{display:block;}
+	.main-visual-area{display:block;}
+	.m-main-visual-area{display:none;}
+}
+/* IR */
+.blind { position:absolute; width:1px; height:0; font-size:0; line-height:0; text-align:left; text-indent:-999em; left:-9999px; overflow:hidden}
+
+/* align */
+.c {text-align:center !important}
+.l {text-align:left !important}
+.r {text-align:right !important}
+.vm {vertical-align:middle !important}
+.vt {vertical-align:top !important}
+.vb {vertical-align:bottom !important}
+.pr10{padding-right:10px !important}
+.mb0{margin-bottom:0px !important}
+.mt5{margin-top:5px !important}
+.pl9{padding-left:9px !important}
+.pl14{padding-left:14px !important}
+.pl20{padding-left:20px !important}
+.pl25{padding-left:25px !important}
+.pl11{padding-left:11px !important}
+.mt10{margin-top:10px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb15{margin-bottom:15px !important;}
+.mb20{margin-bottom:20px !important;}
+.mt60{margin-top:60px !important;}
+.mt40{margin-top:40px !important;}
+.mt20{margin-top:20px !important}
+.mt30{margin-top:30px !important}
+.p0{padding:0 !important}
+.mt0{margin-top:0 !important}
+.pb10{padding-bottom:10px !important}
+.mr1{margin-right:1px !important;}
+.ml1{margin-left:1px !important;}
+.mr3{margin-right:3px !important;}
+.ml3{margin-left:3px !important;}
+.mr5{margin-right:5px !important;}
+.ml5{margin-left:5px !important;}
+
+@media all and (max-width:767px){
+input[type=text], select, textarea{font-size:14px !important;}
+}
+
+
+
+
+
