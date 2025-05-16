@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- fullPage.js CSS -->
+<link rel="stylesheet" href="https://www.unpkg.com/fullpage.js/dist/fullpage.min.css" />
+<!-- Styles for the demo -->
+<style>
+h1{
+    font-size: 3em;
+    /* font-size: calc(2em + 2vw); */
+    font-family: arial,helvetica;
+    margin:0;
+}
+.intro p{
+    width: 50%;
+    margin: 0.5em auto;
+    font-size: 1.65em;
+}
+.tleft{text-align: justify; font-size: 16px !important;}
+.section{
+    font-family: arial,helvetica;
+    color: #fff;
+    text-align:center;
+}
+ /* Overwriting styles for the navigation dots */
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span{
+    background: white;
+}
+/* Backgrounds colors for sections */
+#section1{
+    background-image: linear-gradient(128deg,#40afff,#3f61ff);
+}
+#section2{
+    background-image: linear-gradient(128deg,#ff9a3f,#ff4b40);
+}
+#section3{
+    background-image: linear-gradient(128deg,#39bd9c,#2b8642);
+}
+#section4{
+    background-image: linear-gradient(128deg,#40eeee,#2776dd);
+}
+#section5{
+     background-image: linear-gradient(128deg,#dac932,#d44a09); 
+}
+#section6{
+     background-image: linear-gradient(128deg,#6ba0f0,#5532f3); 
+}
+
+/*publishing style*/
+#section3 > div {width: 1200px;height: auto;margin: 0 auto;}
+#section3 .portbox1{background-color:rgba(255,255,255,0.3);float: left;width: 380px;margin: 10px;}
+#section3 .portbox1 .tit{text-align: center;padding:10px 0;}
+#section3 .portbox1 img{width: 350px; height:240px ; margin-left:15px;
+border-radius: 40px;box-shadow: 5px 5px 10px rgba(0,0,0,0.5);    }
+#section3 .portbox1 .poList{width: 340px;height: 260px;
+background-color:rgba(255,255,255,0.0);margin: 0 auto;}
+#section3 .portbox1 .poList li{padding:10px 5px;font-size: 16px;    }
+#section3 .portbox1 .linkBtn {width: 340px;height: 100px;}
+#section3 .portbox1 .linkBtn button{float: left; width: 150px;
+height: 50px;line-height: 50px;background-color: #7e7d7d;
+color: #fff;  border: 0; margin-left: 20px;cursor: pointer;
+font-size: 16px;  }
+
+/* webdesign style */ 
+#section3-1 {margin:0 auto;width: 1000px; height: auto; overflow:hidden;}
+.tit {text-align: center;font-size: 30px;margin-top: 36px;}
+#box1,#box2,#box3,#box4,#box5,#box6 {
+width:480px;height:240px;  border-bottom:1px solid #999;
+margin: 0 10px;box-sizing: border-box; float: left;      }
+.box  {position: relative;}
+.box .icon1 {position:absolute;top:40px;left:20px;
+    width: 180px;height: 180px;  border-radius: 10px;
+    border: 1px solid #999;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+}
+.box .tit1{position:absolute;top:40px;left:240px}
+.box .sub1 {position:absolute;top:80px;left:240px;
+text-align: left;}
+.box .more {position:absolute;bottom:10px;right:20px}
+
+/* hover style 추가  2025.04.24 */
+  .items {  text-align: center;}
+  .item {  display: inline-block;  width: 300px;  height: 400px;
+    position: relative;  margin: 10px;}
+  .item img {  position: absolute;  top: 50%;  left: 0;
+    transform: translate(0, -50%);}
+
+  .caption {  width: 100%;  height: 100%;
+    background-color: rgba(0,50, 200, 0.4);
+    position: absolute;  top: 0;  left: 0;
+    color: #fff;  padding:60px 20px;  box-sizing: border-box;
+    opacity: 0;  transition: 0.5s;}
+  .caption a {  color: #fff;  background-color: #333;
+    text-decoration: none;  padding: 7px;  border-radius: 3px;}
+  .caption a:hover {  background-color: #fff;  color: #000;}
+  .item:hover .caption {  opacity: 1;}
+
+ </style>
+
+<!-- web-design II 추가내용 -->
+<script src="http://code.jquery.com/jquery-3.7.1.js"></script>
+<link href="css/nivo-lightbox.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script>
+    $(document).ready(function(){
+    $('a').nivoLightbox();
+    });
+</script>
+
+</head>
+<body>
+<!-- fullPage.js HTML -->
+<div id="fullpage">
+
+    <div class="section" id="section1">
+        
+        <div class="intro">
+            <h1>Portfolio</h1>
+            <p class="tleft">
+            <img src="img/intro.jpg" style="float:right;height:400px;margin-left: 20px;"  alt="company_fullview">            
+               
+Welcome to visit web portfolio. <br>
+
+웹표준을 준수한 코딩과 스타일을 정확하게 구현합니다.
+<br>
+디자인과 퍼블리싱 & 프론트엔드 개발까지 웹전반의 기술구현이 가능합니다.
+</p>
+        </div>
+        
+
+    </div>
+    <div class="section" id="section2">
+     <div class="intro">
+      <h1>About</h1>
+      <p class="tleft">
+        <img src="img/mobile3.jpg" style="float:left;height:400px;margin-right: 20px;"  alt="company_fullview">
+        About <br><br>
+        Basic Info <br>
+        irum  bkkang<br>
+        h  p 010-9876-5432<br>
+        mail admin@nate.com<br><br>
+        Career<br>
+        KD아카데미(김포) 스마트콘텐츠 UI/UX웹디자인 & 퍼블리셔 과정교육<br>
+        국가기간전략산업훈련 - 훈련기간: 6개월<br><br>
+        Web Skill<br>
+        html(95%) / css(90%) / javascrtipt(85%) / jquery(80%) / bootstrap(85%) 
+        <br>
+        photoshop(90%) / illustrator(75%) / figma(85%)<br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="section" id="section3">
+      <h1>WebPublishing</h1>
+             <div class="portbox1">
+
+                <h3 class="tit">한국상수도협회</h3>
+
+                <img src="img/kmain.png" alt="main1">
+
+                <br>
+
+                <ul class="poList">
+
+                 <li><b>사이트명 </b> 한국상수도협회(데스크탑)</li>
+
+                 <li><b>제작기간 </b>  5일 (기획/디자인/코딩)</li>
+
+                 <li><b>제 작 물</b> 데스크탑 메인</li>
+
+                 <li><b>컨    셉</b> 깔끔한, 세련된, 고급스러운</li>
+
+                 <li><b>컬    러</b> gray, blue </li>
+
+                </ul>
+
+                <div class="linkBtn">
+
+                  <button>기획서</button>
+
+                  <button>웹사이트</button>
+
+                </div>
+
+             </div><!-- portbox1 end -->
+             <div class="portbox1">
+
+                <h3 class="tit">ANIMAX호스팅</h3>
+
+                <img src="img/main22.png" alt="main1">
+
+                <br>
+
+                <ul class="poList">
+
+                 <li><b>사이트명 </b>  ANIMAX호스팅(데스크탑)</li>
+
+                 <li><b>제작기간 </b>  2일 (기획/디자인/코딩)</li>
+
+                 <li><b>제 작 물</b> 데스크탑 메인</li>
+
+                 <li><b>컨    셉</b> 깔끔한, 세련된, 고급스러운</li>
+
+                 <li><b>컬    러</b> gray, blue </li>
+
+                </ul>
+
+                <div class="linkBtn">
+
+                  <button>기획서</button>
+
+                  <button>웹사이트</button>
+
+                </div>
+
+             </div><!-- portbox1 end -->
+             <div class="portbox1">
+
+                <h3 class="tit">버거킹웹</h3>
+
+                <img src="img/resp1.png" alt="main1">
+
+                <br>
+
+                <ul class="poList">
+
+                 <li><b>사이트명 </b>  버거킹웹(반응형)</li>
+
+                 <li><b>제작기간 </b>  2일 (기획/디자인/코딩)</li>
+
+                 <li><b>제 작 물</b> 데스크탑 메인</li>
+
+                 <li><b>컨    셉</b> 깔끔한, 세련된, 고급스러운</li>
+
+                 <li><b>컬    러</b> gray, blue </li>
+
+                </ul>
+
+                <div class="linkBtn">
+
+                  <button>기획서</button>
+
+                  <button>웹사이트</button>
+
+                </div>
+
+             </div><!-- portbox1 end -->
+    </div>
+    <div class="section" id="section4">
+     <div id="section3-1">
+      <h1>Web Design I</h1>
+       
+      <div id="box1" class="box">
+     <h2 class="tit1">Mobile Main</h2>
+     <p class="sub1">아이폰 16 메인 디자인<br>
+         2day<br>
+         photoshop, illustrator, figma
+         </p>
+     <img  class="icon1" src="img/image1.png" alt="Mobile"/>
+      
+    </div>
+ 
+      <div id="box2" class="box">
+         <h2 class="tit1">CESCO</h2>
+         <p class="sub1">CESCO 메인디자인 <br>
+             2day<br>
+             photoshop, illustrator, figma</p>
+         <img  class="icon1" src="img/desktop.jpg" alt="desktop"/>
+        
+      </div>
+ 
+    <div id="box3" class="box">
+         <h2 class="tit1">k-water </h2>
+         <p class="sub1">
+            k-water 메인디자인 <br>
+            2day <br>
+             photoshop, illustrator, figma</p>
+         <img  class="icon1" src="img/kmain.png" alt="k-water"/>
+         
+      </div> 
+        
+      <div id="box4" class="box">
+         <h2 class="tit1">BugerKing </h2>
+         <p class="sub1"> 버거킹 메인디자인&서브디자인 <br>
+             3day <br>
+             photoshop, illustrator, figma</p>
+         <img  class="icon1" src="img/resp1.png" alt="buger"/>
+        
+      </div>
+ 
+      <div id="box5" class="box">
+         <h2 class="tit1">통도환타지아</h2>
+         <p class="sub1">통도환타지아 <br>
+             2day <br>
+             photoshop, illustrator, figma</p>
+         <img  class="icon1" src="img/pg4.jpg" alt="pg5"/>
+         
+      </div>
+      <div id="box6" class="box">
+        <h2 class="tit1">에넥스텔레콤</h2>
+        <p class="sub1">
+          에넥스텔레콤 메인디자인 <br>
+            1day <br>
+            photoshop, illustrator, figma</p>
+        <img  class="icon1" src="img/main22.png" alt="main"/>
+     </div> 
+     </div>
+    </div>
+    <div class="section" id="section5">
+        <h1>Web Design II</h1>
+        <div id="section4_wrap">
+            <h3>Card & Intro & Landingpage Design</h3>
+            <p>
+               <a data-lightbox-gallery="gallery1" href="img/card1.png" title="Card Design">
+                 <img src="img/card1.png" width="300" height="300" alt="" />
+               </a>
+               <a data-lightbox-gallery="gallery1" href="img/landing_mongd_big.png" title="landing_mongd"><img src="img/landing_mongd.png" width="300" height="300" alt="" /></a> 
+               <a data-lightbox-gallery="gallery1" href="img/beautyLending.png" title="beautyLending"><img src="img/beautyLending.png" width="300" height="300" alt="" /></a> 
+               <a data-lightbox-gallery="gallery1" href="img/intro1.png" title="intro Detail"><img src="img/intro1.png"  width="300" height="300" alt="" /></a>
+           </p>
+         </div>
+    
+    </div>
+    <div class="section" id="section6">
+      <h1>Web Design III</h1>
+      <p> 광고디자인 제작 </p>
+      <div class="items">
+        <div class="item">
+          <img src="img/adv101.png" alt="" style="width:100%;height:100%">
+         
+          <div class="caption">
+            <h2>화장품광고</h2>
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, consequuntur similique sit quia dolore sapiente tempore quaerat necessitatibus laborum!
+            </p> 
+            <a href="img/adv101.png" target="_blank">View</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/adv02.jpg" alt="" style="width:100%;height:100%">
+         
+          <div class="caption">
+            <h2>제품상세</h2>
+            <p>
+             내용설명입니다.
+            </p> 
+            <a href="#none">View</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/adv03.jpg" alt="" style="width:100%;height:100%">
+         
+          <div class="caption">
+            <h2>제품상세</h2>
+            <p>
+             내용설명입니다.
+            </p> 
+            <a href="#none">View</a>
+          </div>
+        </div>
+     </div>
+    </div>
+</div>
+<!-- fullPage.js JS -->
+<script type="text/javascript" src="https://www.unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+<!-- Initialize fullPage.js -->
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        continuousVertical: true,
+        anchors: ['firstPage','secondPage', '3rdPage', '4rdPage', '5rdPage', '6rdPage'],
+        navigation: true
+    });
+
+</script>
+</body>
+</html>
